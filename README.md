@@ -156,6 +156,90 @@
 
 - мерзавец сброс проделал большую работу по unstaging octodog.txt, но вы заметите, что он все еще там. Он просто не поставил больше. Было бы здорово, если бы мы могли вернуться к тому, как все было до того octodog опомнились и разрушил партию. Файлы могут быть изменены обратно, как они были на последней фиксации с помощью команды: Git Checkout - <цель>. Идите вперед и избавиться от всех изменений с момента последней фиксации для octocat.txt
 
+### 1.18 Branching Out
+
+[view on github] (https://try.github.io/levels/1/challenges/18)
+
+- When developers are working on a feature or bug they'll often create a copy (aka. branch) of their code they can make separate commits to. Then when they're done they can merge this branch back into their main master branch. We want to remove all these pesky octocats, so let's create a branch called clean_up, where we'll do all the work:
+
+`git branch clean_up`
+
+- Когда разработчики работают над функцией или ошибки они часто создают копию (ака. Филиал) их кода они могут сделать отдельные коммиты. Потом, когда они сделали, они могут объединить эту ветку обратно в их основной основной ветви. Мы хотим, чтобы удалить все эти досадные octocats, поэтому давайте создадим ветку под названием clean_up, где мы будем делать всю работу
+
+### 1.19 Switching Branches
+
+[view on github] (https://try.github.io/levels/1/challenges/19)
+
+- When developers are working on a feature or bug they'll often create a copy (aka. branch) of their code they can make separate commits to. Then when they're done they can merge this branch back into their main master branch. We want to remove all these pesky octocats, so let's create a branch called clean_up, where we'll do all the work:
+
+`git checkout clean_up`
+
+- Большой! Теперь, если вы наберете GIT ветку вы увидите два местных филиала: главный филиал имени мастера и свой новый филиал под названием clean_up. Вы можете переключать ветви с помощью Git Checkout <ветвь> команды. Попробуйте сделать это сейчас, чтобы перейти к clean_up ветви
+
+### 1.20 Removing All The Things
+
+[view on github] (https://try.github.io/levels/1/challenges/20)
+
+- Ok, so you're in the clean_up branch. You can finally remove all those pesky octocats by using the git rm command which will not only remove the actual files from disk, but will also stage the removal of the files for us. You're going to want to use a wildcard again to get all the octocats in one sweep, go ahead and run:
+
+`git rm "*.txt"`
+
+- Хорошо, так что вы находитесь в clean_up отрасли. Вы можете, наконец, удалить все эти досадные octocats с помощью команды гт ГИТ, которая будет не только удалять существующие файлы с диска, но и этап удаления файлов для нас. Вы собираетесь хотеть использовать маску еще раз, чтобы получить все octocats в одном цикле, идти вперед и бежать.
+
+### 1.21 Commiting Branch Changes
+
+[view on github] (https://try.github.io/levels/1/challenges/21)
+
+- Now that you've removed all the cats you'll need to commit your changes. Feel free to run git status to check the changes you're about to commit.
+
+`git commit -m "Remove all the cats"`
+
+- Теперь, когда вы удалили все кошки вам нужно, чтобы зафиксировать изменения. Не стесняйтесь, чтобы запустить статус GIT, чтобы проверить изменения, которые вы собираетесь совершить.
+
+### 1.22 Switching Back to master
+
+[view on github] (https://try.github.io/levels/1/challenges/22)
+
+- Great, you're almost finished with the cat... er the bug fix, you just need to switch back to the master branch so you can copy (or merge) your changes from the clean_up branch back into the master branch. Go ahead and checkout the master branch:
+
+`git checkout master`
+
+- Отлично, вы почти закончили с кошкой ... ээ исправление этой ошибки, нужно просто переключиться обратно в основной ветви, так что вы можете скопировать (или объединить) изменения из clean_up ветви обратно в основной ветви. Идите вперед и проверка мастер филиала.
+
+### 1.23 Preparing to Merge
+
+[view on github] (https://try.github.io/levels/1/challenges/23)
+
+- Alrighty, the moment has come when you have to merge your changes from the clean_up branch into the master branch. Take a deep breath, it's not that scary. We're already on the master branch, so we just need to tell Git to merge the clean_up branch into it:
+
+`git merge clean_up`
+
+- Alrighty, настал момент, когда вы должны объединить ваши изменения из clean_up филиала в главный филиал. Сделайте глубокий вдох, это не так уж страшно. Мы уже на главной ветке, так что мы просто должны сказать Git объединить ветвь clean_up в него.
+
+### 1.24 Keeping Things Clean
+
+[view on github] (https://try.github.io/levels/1/challenges/24)
+
+- Congratulations! You just accomplished your first successful bugfix and merge. All that's left to do is clean up after yourself. Since you're done with the clean_up branch you don't need it anymore. You can use git branch -d branch name to delete a branch. Go ahead and delete the clean_up branch now:
+
+`git branch -d clean_up`
+
+- Поздравления! Вы просто осуществить свой первый успешный и объединить устранении ошибки. Все, что осталось сделать, это убирать за собой. Так как вы сделали с clean_up ветви вам это больше не нужно. Вы можете использовать Git филиал -d <имя ветви>, чтобы удалить ветку. Идите вперед и удалить ветку clean_up прямо сейчас
+
+### 1.25 The Final Push
+
+[view on github] (https://try.github.io/levels/1/challenges/25)
+
+- Here we are, at the last step. I'm proud that you've made it this far, and it's been great learning Git with you. All that's left for you to do now is to push everything you've been working on to your remote repository, and you're done!
+
+`git push`
+
+- Здесь мы, на последнем шаге. Я горжусь тем, что вы сделали это далеко, и это было здорово научиться Git с вами. Все, что осталось для вас сделать сейчас, чтобы подтолкнуть все, что вы работали на удаленном хранилище, и вы сделали!
+
+
+
+
+
 
 
 
