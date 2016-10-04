@@ -86,3 +86,77 @@
 
 - Отличная работа! Мы пошли вперед и создали новый пустой репозиторий GitHub для использования с Try Git на https://github.com/try-git/try_git.git. Для того, чтобы подтолкнуть наш местный репозиторий на сервере GitHub нам нужно добавить удаленный репозиторий.Эта команда принимает имя удаленного и репозитория URL, который в вашем случае является https://github.com/try-git/try_git.git. Идите вперед и запустить Git удаленного добавить с ниже вариантов.
 
+### 1.11 Pushing Remotely
+
+[view on github] (https://try.github.io/levels/1/challenges/11)
+
+- The push command tells Git where to put our commits when we're ready, and boy we're ready. So let's push our local changes to our origin repo (on GitHub). The name of our remote is origin and the default local branch name is master. The -u tells Git to remember the parameters, so that next time we can simply run git push and Git will know what to do. Go ahead and push it!
+
+`git push -u origin master`
+
+- Команда толчок говорит Git, где поставить наши фиксаций, когда мы готовы, и мальчик мы готовы. Так что давайте толкать наши локальные изменения нашего происхождения репо (на GitHub). Название нашего пульта дистанционного управления является происхождение и локальное имя ветви по умолчанию является ведущим. -u Говорит Git помнить параметры, так что в следующий раз мы можем просто запустить Git толчок и Git будет знать, что делать. Идите вперед и нажмите на нее!
+
+### 1.12 Pulling Remotely
+
+[view on github] (https://try.github.io/levels/1/challenges/12)
+
+- Let's pretend some time has passed. We've invited other people to our GitHub project who have pulled your changes, made their own commits, and pushed them. We can check for changes on our GitHub repository and pull down any new changes by running:
+
+`git pull origin master`
+
+- Давайте представим, что прошло некоторое время. Мы пригласили других людей к нашему проекту GitHub, которые тянут свои изменения, сделали свои собственные фиксаций и оттеснили их. Мы можем проверить изменения на нашем хранилище GitHub и понижающий любые новые изменения, выполнив следующую команду
+
+### 1.13 Differences
+
+[view on github] (https://try.github.io/levels/1/challenges/13)
+
+- Uh oh, looks like there have been some additions and changes to the octocat family. Let's take a look at what is different from our last commit by using the git diff command. In this case we want the diff of our most recent commit, which we can refer to using the HEAD pointer.
+
+`git diff HEAD`
+
+- Ой-ой, похоже, были некоторые дополнения и изменения в семье octocat. Давайте посмотрим на то, что отличается от нашей последней фиксации с помощью команды Git сравнения. В этом случае мы хотим, чтобы дифференциал нашего последней фиксации, который мы можем ссылаться с помощью указателя головы.
+
+### 1.14 Staged Differences
+
+[view on github] (https://try.github.io/levels/1/challenges/14)
+
+- Another great use for diff is looking at changes within files that have already been staged. Remember, staged files are files we have told git that are ready to be committed. Let's use git add to stage octofamily/octodog.txt, which I just added to the family for you.
+
+`git add octofamily/octodog.txt`
+
+- Еще одно большое использование для показа различий смотрит на изменения в файлах, которые уже были поставлены. Помните, что поставил это файлы мы сказали ублюдка, которые готовы к фиксированию. Давайте использовать Git добавить к стадии octofamily / octodog.txt, который я только что добавленный к семье для вас.
+
+### 1.15 Staged Differences (cont'd)
+
+[view on github] (https://try.github.io/levels/1/challenges/15)
+
+- Good, now go ahead and run git diff with the --staged option to see the changes you just staged. You should see that octodog.txt was created.
+
+`git diff --staged`
+
+- Хорошо, теперь идти вперед и запустить Git Diff с --staged опцией, чтобы увидеть изменения, которые вы просто инсценировано. Вы должны увидеть, что octodog.txt был создан.
+
+### 1.16 Resetting the Stage
+
+[view on github] (https://try.github.io/levels/1/challenges/16)
+
+- So now that octodog is part of the family, octocat is all depressed. Since we love octocat more than octodog, we'll turn his frown around by removing octodog.txt. You can unstage files by using the git reset command. Go ahead and remove octofamily/octodog.txt.
+
+`git reset octofamily/octodog.txt`
+
+- Так что теперь octodog является частью семьи, octocat все депрессии. Так как мы любим octocat больше, чем octodog, мы повернем его нахмуриться вокруг путем удаления octodog.txt. Вы можете убрать из буфера файлов с помощью команды сброса мерзавец. Идите вперед и удалить octofamily / octodog.txt.
+
+### 1.17 Undo
+
+[view on github] (https://try.github.io/levels/1/challenges/17)
+
+- git reset did a great job of unstaging octodog.txt, but you'll notice that he's still there. He's just not staged anymore. It would be great if we could go back to how things were before octodog came around and ruined the party. Files can be changed back to how they were at the last commit by using the command: git checkout -- target. Go ahead and get rid of all the changes since the last commit for octocat.txt
+
+`git checkout -- octocat.txt`
+
+- мерзавец сброс проделал большую работу по unstaging octodog.txt, но вы заметите, что он все еще там. Он просто не поставил больше. Было бы здорово, если бы мы могли вернуться к тому, как все было до того octodog опомнились и разрушил партию. Файлы могут быть изменены обратно, как они были на последней фиксации с помощью команды: Git Checkout - <цель>. Идите вперед и избавиться от всех изменений с момента последней фиксации для octocat.txt
+
+
+
+
+
