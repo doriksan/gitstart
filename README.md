@@ -1,6 +1,6 @@
 # [GIT TUTORIAL](https://try.github.io/levels/1/challenges/1)
 
-### Got 15 minutes and want to learn Git?
+### 1. Got 15 minutes and want to learn Git?
 
 [view on github] (https://try.github.io/levels/1/challenges/1)
 
