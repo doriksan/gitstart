@@ -66,5 +66,13 @@
 
 `git commit -m "Add all the cotocat txt files"`
 
+### 1.9 History
 
+[view on github] (https://try.github.io/levels/1/challenges/9)
+
+- So we've made a few commits. Now let's browse them to see what we changed.Fortunately for us, there's git log. Think of Git's log as a journal that remembers all the changes we've committed so far, in the order we committed them. Try running it now:
+
+`git log`
+
+- Таким образом, мы сделали несколько фиксаций. Теперь давайте просматривать их, чтобы увидеть, что мы изменили. К счастью для нас, есть журнал мерзавец. Подумайте о журнале Git в качестве журнала, который запоминает все изменения, которые мы совершенные до сих пор, в том порядке, мы их совершивших. Попробуйте запустить его прямо сейчас:
 
