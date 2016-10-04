@@ -40,5 +40,17 @@
 
 `git status`
 
+### 1.6 Committing
+
+[view on github] (https://try.github.io/levels/1/challenges/6)
+
+- Notice how Git says changes to be committed? The files listed here are in the Staging Area, and they are not in our repository yet. We could add or remove files from the stage before we store them in the repository.To store our staged changes we run the commit command with a message describing what we've changed. Let's do that now by typing:
+
+`git commit -m "Add cute octocat story"`
+
+- Обратите внимание, как Git говорит изменения должны быть совершены? Файлы, перечисленные здесь, находятся в промежуточной области, и они не находятся в нашем хранилище пока нет. Мы могли бы добавить или удалить файлы из стадии, прежде чем мы хранить их в хранилище.Для того, чтобы сохранить наши постановочные изменения, которые мы выполнить команду совершить с сообщением, описывающей то, что мы изменили. Давайте сделаем это сейчас.
+
+
+
 
 
