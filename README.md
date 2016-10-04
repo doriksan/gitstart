@@ -1,11 +1,10 @@
 # [GIT TUTORIAL](https://try.github.io/levels/1/challenges/1)
 
 ## Got 15 minutes and want to learn Git?
-
-
-## Quick start
-
+view on github (https://try.github.io/levels/1/challenges/1)
 `git init`
+-Git allows groups of people to work on the same documents (often code) at the same time, and without stepping on each other's toes. It's a distributed version control system.
+Our terminal prompt below is currently in a directory we decided to name "octobox". To initialize a Git repository here, type the following command:
 
 - [Download the latest release.](https://github.com/twbs/bootstrap/archive/v4.0.0-alpha.4.zip)
 - Clone the repo: `git clone https://github.com/twbs/bootstrap.git`
