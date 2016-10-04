@@ -74,5 +74,15 @@
 
 `git log`
 
-- Таким образом, мы сделали несколько фиксаций. Теперь давайте просматривать их, чтобы увидеть, что мы изменили. К счастью для нас, есть журнал мерзавец. Подумайте о журнале Git в качестве журнала, который запоминает все изменения, которые мы совершенные до сих пор, в том порядке, мы их совершивших. Попробуйте запустить его прямо сейчас:
+- Таким образом, мы сделали несколько фиксаций. Теперь давайте просматривать их, чтобы увидеть, что мы изменили. К счастью для нас, есть журнал мерзавец. Подумайте о журнале Git в качестве журнала, который запоминает все изменения, которые мы совершенные до сих пор, в том порядке, мы их совершивших. Попробуйте запустить его прямо сейчас.
+
+### 1.10 Remote Repositories
+
+[view on github] (https://try.github.io/levels/1/challenges/10)
+
+- Great job! We've gone ahead and created a new empty GitHub repository for you to use with Try Git at https://github.com/try-git/try_git.git. To push our local repo to the GitHub server we'll need to add a remote repository.This command takes a remote name and a repository URL, which in your case is https://github.com/try-git/try_git.git. Go ahead and run git remote add with the options below:
+
+`git remote add origin https://github.com/try-git/try_git.git`
+
+- Отличная работа! Мы пошли вперед и создали новый пустой репозиторий GitHub для использования с Try Git на https://github.com/try-git/try_git.git. Для того, чтобы подтолкнуть наш местный репозиторий на сервере GitHub нам нужно добавить удаленный репозиторий.Эта команда принимает имя удаленного и репозитория URL, который в вашем случае является https://github.com/try-git/try_git.git. Идите вперед и запустить Git удаленного добавить с ниже вариантов.
 
