@@ -32,4 +32,13 @@
 
 - Хорошо, это выглядит как наш репозиторий Git работает должным образом. Обратите внимание, как Git говорит octocat.txt это "несопровождаемый"? Это означает, что Git видит, что octocat.txt новый файл.Чтобы сказать Git, чтобы начать отслеживать изменения, сделанные в octocat.txt, нам сначала нужно добавить его в область размещения с помощью Git добавить.
 
+### 1.5 Checking for Changes
+
+[view on github] (https://try.github.io/levels/1/challenges/5)
+
+- Good job! Git is now tracking our octocat.txt file. Let's run git status again to see where we stand:
+
+`git status`
+
+
 
