@@ -50,6 +50,16 @@
 
 - Обратите внимание, как Git говорит изменения должны быть совершены? Файлы, перечисленные здесь, находятся в промежуточной области, и они не находятся в нашем хранилище пока нет. Мы могли бы добавить или удалить файлы из стадии, прежде чем мы хранить их в хранилище.Для того, чтобы сохранить наши постановочные изменения, которые мы выполнить команду совершить с сообщением, описывающей то, что мы изменили. Давайте сделаем это сейчас.
 
+### 1.7 Adding All Changes
+
+[view on github] (https://try.github.io/levels/1/challenges/7)
+
+- Great! You also can use wildcards if you want to add many files of the same type. Notice that I've added a bunch of .txt files into your directory below.I put some in a directory named "octofamily" and some others ended up in the root of our "octobox" directory. Luckily, we can add all the new files using a wildcard with git add. Don't forget the quotes!
+
+`git add "*.txt"`
+
+- Большой! Вы можете также использовать групповые символы, если вы хотите добавить много файлов одного и того же типа. Обратите внимание, что я добавил кучу файлов .txt в каталог ниже.Я положил некоторые в папку с именем "octofamily" и некоторые другие оказались в корне нашего каталога "octobox". К счастью, мы можем добавить все новые файлы, используя символ подстановки с ГИТ доп. Не забудьте кавычки!
+
 
 
 
